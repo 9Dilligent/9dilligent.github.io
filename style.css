@@ -1,0 +1,98 @@
+/* fix & addition */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* nav */
+
+.nav-item>a{
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.nav-item>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .nav-item>a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #ffffff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-item>a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.offcanvas-title{
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* body */
+
+body>h2{
+    color: white;
+    text-align: center;
+}
+body>h4{
+    color: rgb(236, 236, 236);
+    text-align: center;
+}
+i{
+    color: white;
+}
+
+.links{
+    margin-top: 25rem;
+    text-align: center;
+}
+.playlist-link{
+    color: rgb(236, 236, 236);
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.301);
+    }
+.copyright{
+    position: fixed;     
+    text-align: center;    
+    bottom: 5px; 
+    width: 100%;
+}
+.copyright>a{
+    color: rgba(255, 255, 255, 0.623);
+    text-decoration: none;
+    font-family: Poppins;
+    transition-duration: .5s;
+}
+.fa-instagram{
+    color: rgba(255, 255, 255, 0.623);
+}
+.copyright>a:hover{
+    text-decoration: underline;
+}
